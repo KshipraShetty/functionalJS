@@ -25,3 +25,16 @@ console.log('Test for base case: ', checkUsersValid(goodUsers) === true);
 goodUsers = [];
 submittedUsers = [];
 console.log('Test for empty id case: ', checkUsersValid(goodUsers) === true);
+
+//no match case
+goodUsers = [
+		{ id: 1 },
+		{ id: 2 },
+		{ id: 3 }
+		];
+	submittedUsers = [
+      { id: 2 },
+      { id: 3 },
+      { id: 4 }
+    ];
+console.log('Test for false case: ', checkUsersValid(goodUsers) === false);
