@@ -11,7 +11,12 @@ function countFunction(eleOne, initial) {
 }
 
 //base case
-const inputWords = [1, 2, 3];
-const initial = 0;
+let inputWords = [1, 2, 3];
+let initial = 0;
 
 console.log('The base case is: ', reduce(inputWords, countFunction, initial) === 6);
+
+//empty case
+inputWords = [];
+initial = 0;
+console.log('The base case is: ', reduce(inputWords, countFunction, initial) === 0);
