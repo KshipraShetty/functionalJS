@@ -24,3 +24,7 @@ console.log('The empty array case is: ', reduce(inputWords, countFunction, initi
 inputWords = [1, 2, 3, 4];
 initial = -5;
 console.log('The negative initial case is: ', reduce(inputWords, countFunction, initial) === 5);
+
+inputWords = [-1, -2, -3, -4];
+initial = 0;
+console.log('The negative array case is: ', reduce(inputWords, countFunction, initial) === -10);
