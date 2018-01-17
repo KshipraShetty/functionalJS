@@ -28,9 +28,8 @@ duckTwo = {
   quack: true
 };
 console.log('With all correct quack objects: ', duckCount(duckOne, duckTwo) === 2);
-/*
+
 //zero case
 duckOne = Object.create({ quack: true });
 duckTwo = Object.create({ quack: true });
-console.log('The base case: ', duckCount(duckOne, duckTwo) === 0);
-*/
+console.log('With 0 objects with quack property: ', duckCount(duckOne, duckTwo) === 0);
