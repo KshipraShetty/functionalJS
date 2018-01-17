@@ -19,4 +19,8 @@ console.log('The base case is: ', reduce(inputWords, countFunction, initial) ===
 //empty case
 inputWords = [];
 initial = 0;
-console.log('The base case is: ', reduce(inputWords, countFunction, initial) === 0);
+console.log('The empty array case is: ', reduce(inputWords, countFunction, initial) === 0);
+
+inputWords = [1, 2, 3, 4];
+initial = -5;
+console.log('The negative initial case is: ', reduce(inputWords, countFunction, initial) === 5);
