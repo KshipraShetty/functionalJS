@@ -7,16 +7,16 @@ function duckCount() {
 module.exports = duckCount;
 
 // base case
-const duckOne = {
+let duckOne = {
   quack() {
     console.log('quack');
   }
 };
 
-const duckTwo = Object.create({ quack: true });
+let duckTwo = Object.create({ quack: true });
 console.log('The base case with one quack and one no quack: ', duckCount(duckOne, duckTwo) === 1);
 
-/*
+
 //two quacks
 duckOne = {
   quack() {
@@ -27,8 +27,8 @@ duckOne = {
 duckTwo = {
   quack: true
 };
-console.log('The base case: ', duckCount(duckOne, duckTwo) === 2);
-
+console.log('With all correct quack objects: ', duckCount(duckOne, duckTwo) === 2);
+/*
 //zero case
 duckOne = Object.create({ quack: true });
 duckTwo = Object.create({ quack: true });
